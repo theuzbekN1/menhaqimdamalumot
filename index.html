@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>men haqimda malumot</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- PNG yaratish uchun -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- MA'LUMOT KIRITISH -->
+        <div class="form-box">
+
+            <h1>men haqimda malumot</h1>
+
+            <p class="subtitle">
+                O‘zingiz haqingizdagi ma’lumotlarni kiriting
+            </p>
+
+            <form id="studentForm">
+
+                <div class="row">
+
+                    <div class="input-group">
+                        <label>Ism</label>
+
+                        <input
+                            type="text"
+                            id="firstName"
+                            placeholder="Masalan: Suxrob"
+                            required
+                        >
+                    </div>
+
+                    <div class="input-group">
+                        <label>Familiya</label>
+
+                        <input
+                            type="text"
+                            id="lastName"
+                            placeholder="Masalan: Aliyev"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+
+                    <div class="input-group">
+                        <label>Maktab</label>
+
+                        <input
+                            type="text"
+                            id="school"
+                            placeholder="Masalan: 12-maktab"
+                            required
+                        >
+                    </div>
+
+                    <div class="input-group">
+                        <label>Sinf</label>
+
+                        <input
+                            type="text"
+                            id="className"
+                            placeholder="Masalan: 10-A"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+
+                    <div class="input-group">
+                        <label>Tug‘ilgan sana</label>
+
+                        <input
+                            type="date"
+                            id="birthDate"
+                        >
+                    </div>
+
+                    <div class="input-group">
+                        <label>Sevimli fan</label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            placeholder="Masalan: Informatika"
+                        >
+                    </div>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>Qiziqishlar</label>
+
+                    <input
+                        type="text"
+                        id="hobby"
+                        placeholder="Masalan: Futbol, dasturlash, o‘yinlar"
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>O‘zingiz haqingizda</label>
+
+                    <textarea
+                        id="about"
+                        placeholder="O‘zingiz haqingizda qisqacha yozing..."
+                    ></textarea>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>Profil rasmi</label>
+
+                    <input
+                        type="file"
+                        id="photo"
+                        accept="image/*"
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="generate-btn"
+                >
+                    ✨ Karta yaratish
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- NATIJA -->
+        <div
+            class="result-box"
+            id="resultBox"
+        >
+
+            <h2>Sizning malumotingiz</h2>
+
+            <div id="cardContainer"></div>
+
+
+            <div class="buttons">
+
+                <button id="downloadBtn">
+                    ⬇ PNG yuklab olish
+                </button>
+
+                <button id="againBtn">
+                    🔄 Yana yaratish
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
