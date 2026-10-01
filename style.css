@@ -1,0 +1,556 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+
+    background: #101114;
+
+    color: white;
+
+    padding: 40px 20px;
+}
+
+
+.container {
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+
+/* FORM */
+
+.form-box {
+
+    background: #191b20;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    border: 1px solid #292c34;
+}
+
+
+h1 {
+
+    font-size: 32px;
+
+    margin-bottom: 8px;
+}
+
+
+.subtitle {
+
+    color: #969ba7;
+
+    margin-bottom: 30px;
+}
+
+
+.row {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+}
+
+
+.input-group {
+
+    margin-bottom: 20px;
+}
+
+
+label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #dfe2e8;
+
+    font-size: 14px;
+}
+
+
+input,
+textarea {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border-radius: 10px;
+
+    border: 1px solid #30343d;
+
+    background: #101216;
+
+    color: white;
+
+    outline: none;
+
+    font-size: 15px;
+}
+
+
+input:focus,
+textarea:focus {
+
+    border-color: #777;
+
+}
+
+
+textarea {
+
+    min-height: 100px;
+
+    resize: vertical;
+}
+
+
+.generate-btn {
+
+    width: 100%;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: white;
+
+    color: #111;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .2s;
+}
+
+
+.generate-btn:hover {
+
+    transform: translateY(-2px);
+
+    opacity: .9;
+}
+
+
+/* NATIJA */
+
+.result-box {
+
+    display: none;
+
+    margin-top: 40px;
+
+    text-align: center;
+}
+
+
+.result-box h2 {
+
+    margin-bottom: 25px;
+}
+
+
+#cardContainer {
+
+    display: flex;
+
+    justify-content: center;
+}
+
+
+/* KARTA */
+
+.student-card {
+
+    width: 700px;
+
+    min-height: 420px;
+
+    padding: 40px;
+
+    border-radius: 28px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    text-align: left;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.35);
+}
+
+
+.card-title {
+
+    font-size: 14px;
+
+    letter-spacing: 3px;
+
+    opacity: .8;
+}
+
+
+.card-name {
+
+    font-size: 38px;
+
+    font-weight: 800;
+
+    margin-top: 15px;
+
+    padding-right: 130px;
+}
+
+
+.card-school {
+
+    margin-top: 8px;
+
+    font-size: 18px;
+
+    opacity: .8;
+}
+
+
+.card-info {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    margin-top: 35px;
+}
+
+
+.info-item {
+
+    padding: 14px;
+
+    border-radius: 12px;
+
+    background: rgba(255,255,255,.12);
+}
+
+
+.info-label {
+
+    font-size: 11px;
+
+    opacity: .65;
+
+    text-transform: uppercase;
+}
+
+
+.info-value {
+
+    font-size: 16px;
+
+    margin-top: 5px;
+
+    font-weight: bold;
+}
+
+
+.card-about {
+
+    margin-top: 20px;
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    background: rgba(255,255,255,.08);
+
+    font-size: 14px;
+}
+
+
+.profile-photo {
+
+    position: absolute;
+
+    right: 40px;
+
+    top: 40px;
+
+    width: 105px;
+
+    height: 105px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 4px solid rgba(255,255,255,.7);
+}
+
+
+/* RANDOM DIZAYNLAR */
+
+
+/* 1 — Binafsha */
+
+.design-1 {
+
+    background:
+
+        radial-gradient(
+            circle at 80% 20%,
+            #ff4ecd 0,
+            transparent 30%
+        ),
+
+        linear-gradient(
+            135deg,
+            #111827,
+            #312e81
+        );
+}
+
+
+/* 2 — Ko‘k */
+
+.design-2 {
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #020617,
+            #172554
+        );
+}
+
+
+/* 3 — Yashil */
+
+.design-3 {
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #064e3b,
+            #10b981
+        );
+}
+
+
+/* 4 — To‘q sariq */
+
+.design-4 {
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #7c2d12,
+            #f97316
+        );
+}
+
+
+/* 5 — Pushti */
+
+.design-5 {
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #4c1d95,
+            #ec4899
+        );
+}
+
+
+/* 6 — Kulrang */
+
+.design-6 {
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #0f172a,
+            #475569
+        );
+}
+
+
+/* 7 — Neon */
+
+.design-7 {
+
+    background:
+
+        radial-gradient(
+            circle at 20% 20%,
+            #38bdf8,
+            transparent 25%
+        ),
+
+        linear-gradient(
+            135deg,
+            #172554,
+            #020617
+        );
+}
+
+
+/* 8 — Sariq */
+
+.design-8 {
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #713f12,
+            #facc15
+        );
+
+    color: #111;
+}
+
+
+.design-8 .info-item,
+.design-8 .card-about {
+
+    background: rgba(0,0,0,.1);
+}
+
+
+/* TUGMALAR */
+
+.buttons {
+
+    margin-top: 25px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px;
+}
+
+
+.buttons button {
+
+    padding: 13px 20px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+
+#downloadBtn {
+
+    background: white;
+
+    color: #111;
+}
+
+
+#againBtn {
+
+    background: #292d35;
+
+    color: white;
+}
+
+
+/* TELEFON */
+
+@media (max-width: 700px) {
+
+    body {
+
+        padding: 20px 12px;
+    }
+
+
+    .form-box {
+
+        padding: 22px;
+    }
+
+
+    .row {
+
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+
+    .student-card {
+
+        width: 100%;
+
+        min-height: 500px;
+
+        padding: 25px;
+    }
+
+
+    .card-name {
+
+        font-size: 27px;
+
+        padding-right: 90px;
+    }
+
+
+    .profile-photo {
+
+        width: 80px;
+
+        height: 80px;
+
+        right: 25px;
+
+        top: 25px;
+    }
+
+
+    .card-info {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .buttons {
+
+        flex-direction: column;
+    }
+
+}
